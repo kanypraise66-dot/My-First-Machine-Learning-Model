@@ -34,6 +34,8 @@ Confusion matrix at 0.90: TN 1,588,238 / FP 364 / FN 367 / TP 1,686. The 0.90 th
 
 **Drivers:** the model relies mostly on `amount_over_balance`, `amount`, and transaction type (TRANSFER, CASH_OUT); `hour` contributes little.
 
+   ![PR curves](results/figures/pr_curves.png)
+
 ### Limitations
 - Recall plateaus near 93%. About 135 test frauds (6.6%) score near zero; most are CASH_OUT transactions that drain the origin into a destination with an existing balance. About 430,000 legitimate transactions share that profile (0.17% fraud), so with current features they are largely indistinguishable.
 - A time-based split (train on the first 80% of steps) gave PR-AUC 1.000. I do not treat this as reliable: no post-transaction features are present (checked), but the late test period has a different fraud rate (0.34%), and the likely explanation (the period is easier to separate) is unverified.
