@@ -17,10 +17,10 @@ Gradient boosting model that flags fraudulent mobile-money transactions using on
 
 | Model | PR-AUC |
 |---|---|
-| Logistic regression | 0.204 |
+| Logistic regression | 0.186 |
 | Gradient boosting | 0.805 |
 
-**Leakage check:** using post-transaction balances raised logistic PR-AUC to 0.569 (vs ~0.2 without), so they are excluded from the main model.
+**Leakage check:** using post-transaction balances raised logistic PR-AUC to 0.569 (vs 0.186 without), so they are excluded from the main model.
 
 **Operating points (gradient boosting, test set of 2,053 frauds):**
 
