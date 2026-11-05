@@ -1,0 +1,11 @@
+This is a practical example of a requirements.txt file for a fraud detection project. It lists the necessary Python packages and their versions that are required to run the project successfully.
+--------------  install the required packages using pip by running the following command in your terminal:
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+imbalanced-learn
+xgboost
+joblib
+jupyter

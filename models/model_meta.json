@@ -1,0 +1,18 @@
+{
+  "features": [
+    "amount",
+    "oldbalanceOrg",
+    "oldbalanceDest",
+    "hour",
+    "amount_over_balance",
+    "dest_old_zero",
+    "type_CASH_IN",
+    "type_CASH_OUT",
+    "type_DEBIT",
+    "type_PAYMENT",
+    "type_TRANSFER"
+  ],
+  "threshold": 0.9,
+  "use_post_balances": false,
+  "split": "random stratified 75/25, random_state=0"
+}
